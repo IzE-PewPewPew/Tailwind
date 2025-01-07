@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind E-Commerce</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+
+  <!-- Navbar -->
+  <nav class="bg-gradient-to-r from-blue-500 to-indigo-500 p-4 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-white text-3xl font-bold tracking-wide">Project Tailwind - Store</h1>
+      <div>
+        <button class="text-white font-medium relative">
+          Cart
+          <span id="cart-count" class="absolute top-0 right-8 bg-red-500 text-white text-xs px-2 py-0.5 rounded-full">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container mx-auto py-8 px-4">
+    <h2 class="text-3xl font-bold text-gray-800 mb-6">Our Products</h2>
+    <div id="product-list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <!-- Products will load dynamically -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-6">
+    <p>&copy; 2025 TailwindStore. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
