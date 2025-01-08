@@ -1,7 +1,14 @@
 const productList = document.getElementById("product-list");
 const cartCountElement = document.getElementById("cart-count");
+const menuToggle = document.getElementById("menu-toggle");
+const mobileMenu = document.getElementById("mobile-menu");
 
 let cart = JSON.parse(localStorage.getItem("tailwindCart")) || [];
+
+// Toggle mobile menu
+menuToggle.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
 
 // Fetch and display products
 async function fetchProducts() {
